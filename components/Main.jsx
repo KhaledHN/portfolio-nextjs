@@ -2,6 +2,7 @@ import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
+import Link from "next/link";
 
 const Main = () => {
   return (
@@ -27,16 +28,24 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaLinkedinIn />
+              <Link href="https://www.linkedin.com/in/khaled-hazem-711527223/">
+                <FaLinkedinIn />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <FaGithub />
+              <Link href="https://github.com/KhaledHN">
+                <FaGithub />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <AiOutlineMail />
+              <Link href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJqXxhFbpRhxNlVPhLsSwWrlkqhLtXRKFkCtRfxVBnfFHZrnmZNmzdTStkWKskMNjXHPRhg">
+                <AiOutlineMail />
+              </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <BsFillPersonLinesFill />
+              <Link href="https://about.me/khaledhazem">
+                <BsFillPersonLinesFill />
+              </Link>
             </div>
           </div>
         </div>
@@ -46,4 +55,3 @@ const Main = () => {
 };
 
 export default Main;
-
