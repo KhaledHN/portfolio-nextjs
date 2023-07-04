@@ -13,9 +13,9 @@ const Navbar = () => {
   };
 
   return (
-    <div className="fixed w-full h-20 shadow-xl z-[100]">
+    <div className="fixed w-full h-20 bg-slate-200 shadow-xl z-[100]">
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image src="/assets/navLogo.png" alt="" width="125" height="50" />
+        <Image src="/assets/navLogo.png" alt="" width="100" height="50" />
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -110,7 +110,7 @@ const Navbar = () => {
                     </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer hover:scale-105 ease-in duration-300">
-                    <Link href="https://about.me/khaledhazem">
+                    <Link href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJqXxhFbpRhxNlVPhLsSwWrlkqhLtXRKFkCtRfxVBnfFHZrnmZNmzdTStkWKskMNjXHPRhg">
                       <BsFillPersonLinesFill />
                     </Link>
                   </div>
