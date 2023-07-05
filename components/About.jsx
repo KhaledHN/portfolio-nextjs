@@ -33,7 +33,7 @@ const About = () => {
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex item-center justify-center hover:scale-105 ease-in duration-300">
           <img
             className="rounded-xl"
-            src="/assets/WhatsApp Image 2023-07-03 at 10.50.41 PM.jpeg"
+            src="/about assets/profilePic.jpeg"
             alt="/"
           />
         </div>

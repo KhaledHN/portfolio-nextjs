@@ -1,3 +1,4 @@
+/* eslint-disable react/no-unescaped-entities */
 import React from "react";
 import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
@@ -10,11 +11,11 @@ const Main = () => {
       <div className="max-w-[1240px] w-full h-full mx-auto p-2 flex justify-center items-center ">
         <div>
           <h1 className="py-4 text-gray-700">
-            Hi, Iam <span className="text-[#5651e1]">Khaled</span>{" "}
+            Hi, I'am <span className="text-[#5651e1]">Khaled</span>{" "}
           </h1>
           <h1 className="py-4 text-gray-700">A Front-End Web Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
-            Iam a passionate trainee web developer specializing in React,
+            I'am a passionate trainee web developer specializing in React,
             Tailwind CSS, GitHub, and Vercel. Skilled in creating engaging web
             applications with dynamic UIs. Proficient in Reacts component-based
             architecture, state management, and efficient routing. Experienced
