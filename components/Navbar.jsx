@@ -28,17 +28,20 @@ const Navbar = () => {
     <div
       className={
         shadow
-          ? "fixed w-full h-20 bg-slate-200 shadow-xl z-[100]"
-          : "fixed w-full h-20 bg-slate-200 z-[100]"
+          ? "fixed w-full h-20 bg-white/80 shadow-xl z-[100]"
+          : "fixed w-full h-20 bg-white/80 z-[100]"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Image
-          src="/navbar assets/navLogo.png"
-          alt=""
-          width="100"
-          height="50"
-        />
+        <Link href="">
+          <Image
+            src="/navbar assets/navLogo.png"
+            alt=""
+            width="100"
+            height="50"
+          />
+        </Link>
+
         <div>
           <ul className="hidden md:flex">
             <Link href="/">
@@ -81,12 +84,14 @@ const Navbar = () => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Image
-                src="/navbar assets/navLogo.png"
-                width="87"
-                height="35"
-                alt="/"
-              />
+              <Link onClick={() => setNav(false)} href="">
+                <Image
+                  src="/navbar assets/navLogo.png"
+                  alt=""
+                  width="100"
+                  height="50"
+                />
+              </Link>
               <div
                 onClick={handleNav}
                 className="rounded-full shadow-lg shadow-gray-400 p-3 cursor-pointer"
@@ -102,19 +107,34 @@ const Navbar = () => {
             <div>
               <ul className="py-4 flex-col">
                 <Link href="">
-                  <li className="py-4 text-sm"> Home</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    {" "}
+                    Home
+                  </li>
                 </Link>
                 <Link href="/#about">
-                  <li className="py-4 text-sm"> About</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    {" "}
+                    About
+                  </li>
                 </Link>
                 <Link href="/#skills">
-                  <li className="py-4 text-sm"> Skills</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    {" "}
+                    Skills
+                  </li>
                 </Link>
                 <Link href="/#projects">
-                  <li className="py-4 text-sm"> Projects</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    {" "}
+                    Projects
+                  </li>
                 </Link>
                 <Link href="/#contact">
-                  <li className="py-4 text-sm"> Contact</li>
+                  <li onClick={() => setNav(false)} className="py-4 text-sm">
+                    {" "}
+                    Contact
+                  </li>
                 </Link>
               </ul>
               <div className="pt-40">

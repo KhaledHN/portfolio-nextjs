@@ -20,25 +20,25 @@ const Projects = () => {
           <ProjectItem
             title="white"
             backgroundImg={whiteImg}
-            projectUrl="/assets/white.png"
+            projectUrl="/White"
           />
 
           <ProjectItem
             title="white2"
             backgroundImg={whiteImg2}
-            projectUrl="/assets/white2.png"
+            projectUrl="White2"
           />
 
           <ProjectItem
             title="white3"
             backgroundImg={whiteImg3}
-            projectUrl="/assets/white23.png"
+            projectUrl="White3"
           />
 
           <ProjectItem
             title="white4"
             backgroundImg={whiteImg4}
-            projectUrl="/assets/white4.png"
+            projectUrl="White4"
           />
         </div>
       </div>
