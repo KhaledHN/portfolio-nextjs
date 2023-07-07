@@ -7,13 +7,13 @@ import Link from "next/link";
 
 const Main = () => {
   return (
-    <div className="w-full h-full text-center pt-30 ">
+    <div id="home" className="w-full lg:h-screen text-center  ">
       <div className="max-w-[1240px] w-full h-full mx-auto py-10 flex justify-center items-center ">
         <div>
-          <h1 className="pt-20 text-gray-700">
+          <h1 className="pt-20 pb-4 text-gray-700">
             Hi, I'am <span className="text-[#5651e1]">Khaled</span>{" "}
           </h1>
-          <h1 className="py-4 text-gray-700">A Front-End Web Developer</h1>
+          <h1 className="py-4 text-gray-700">A Front-End Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I'am a passionate trainee web developer specializing in React,
             Tailwind CSS, GitHub, and Vercel. Skilled in creating engaging web
