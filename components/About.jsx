@@ -10,7 +10,6 @@ const About = () => {
             About
           </p>
           <h2 className="py-4">Who I Am</h2>
-          <p className="py-2 text-gray-600">I am not your normal developer</p>
           <p className="py-2 text-gray-600">
             I have always had a knack for technology and working with computers.
             In 2019 I started working with c# to make small games on Unity, then
