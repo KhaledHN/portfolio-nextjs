@@ -4,7 +4,7 @@ import Image from "next/image";
 import whiteImg4 from "../assets/white4.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 
-const White = () => {
+const White4 = () => {
   return (
     <div className="w-full ">
       <div className="w-sceen h-[30vh] lg:h-[40vh] relative ">
