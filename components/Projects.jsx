@@ -3,7 +3,7 @@ import Image from "next/image";
 
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
-import whiteImg from "../assets/white.png";
+import TraveL from "../projects assets/Travelious.jpeg";
 import whiteImg2 from "../assets/white2.png";
 import whiteImg3 from "../assets/white23.png";
 import whiteImg4 from "../assets/white4.png";
@@ -18,9 +18,9 @@ const Projects = () => {
         <h2 className="py-2">What I've Built</h2>
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
-            title="white"
-            backgroundImg={whiteImg}
-            projectUrl="/White"
+            title="Travelious"
+            backgroundImg={TraveL}
+            projectUrl="/Travel"
           />
 
           <ProjectItem

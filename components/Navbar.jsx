@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 
-const Navbar = (isDark) => {
+const Navbar = () => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
@@ -14,14 +14,19 @@ const Navbar = (isDark) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (isDark) {
+    if (
+      router.asPath === "/Travel" ||
+      router.asPath === "/White2" ||
+      router.asPath === "/White3" ||
+      router.asPath === "/White4"
+    ) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
       setLinkColor("#1f2937");
     }
-  }, [isDark]);
+  }, [router]);
 
   const handleNav = () => {
     setNav(!nav);
