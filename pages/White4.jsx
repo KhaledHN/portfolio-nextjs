@@ -3,10 +3,12 @@ import Link from "next/link";
 import Image from "next/image";
 import whiteImg4 from "../assets/white4.png";
 import { RiRadioButtonFill } from "react-icons/ri";
+import Navbar from "@/components/Navbar";
 
 const White4 = () => {
   return (
     <div className="w-full ">
+      <Navbar />
       <div className="w-sceen h-[30vh] lg:h-[40vh] relative ">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10 " />
         <Image

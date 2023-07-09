@@ -6,7 +6,7 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { useRouter } from "next/router";
 
-const Navbar = () => {
+const Navbar = (isDark) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
@@ -14,19 +14,14 @@ const Navbar = () => {
   const router = useRouter();
 
   useEffect(() => {
-    if (
-      router.asPath === "/White" ||
-      router.asPath === "/White2" ||
-      router.asPath === "/White3" ||
-      router.asPath === "/White4"
-    ) {
+    if (isDark) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
       setLinkColor("#1f2937");
     }
-  }, [router]);
+  }, [isDark]);
 
   const handleNav = () => {
     setNav(!nav);
@@ -34,11 +29,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleShadow = () => {
-      if (window.scrollY >= 90) {
-        setShadow(true);
-      } else {
-        setShadow(false);
-      }
+      setShadow(window.scrollY >= 90);
     };
     window.addEventListener("scroll", handleShadow);
   }, []);
@@ -48,8 +39,8 @@ const Navbar = () => {
       style={{ backgroundColor: `${navBg}` }}
       className={
         shadow
-          ? "fixed w-full h-20 shadow-xl z-[100]"
-          : "fixed w-full h-20 z-[100]"
+          ? "fixed w-full h-20 shadow-xl z-[100] duration-200"
+          : "fixed w-full h-20 z-[100] duration-200"
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
