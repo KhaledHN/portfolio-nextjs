@@ -26,7 +26,7 @@ const Main = () => {
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://www.linkedin.com/in/khaled-hazem-711527223/">
+              <Link href="https://www.linkedin.com/in/khaledHN/">
                 <FaLinkedinIn />
               </Link>
             </div>
