@@ -4,10 +4,12 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
+import Navbar from "./Navbar";
 
 const Main = () => {
   return (
     <div id="home" className="w-full lg:h-screen text-center  ">
+      <Navbar />
       <div className="max-w-[1240px] w-full h-full mx-auto py-10 flex justify-center items-center ">
         <div>
           <h1 className="pt-20 pb-4 text-gray-700">
