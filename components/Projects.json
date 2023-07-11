@@ -1,0 +1,56 @@
+{
+    "projects": [
+        {
+            "project": "project-unique-url-key",
+            "title": "Travelious",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Javascript"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "/public/Projects assets/Travelious.jpeg"
+        },
+        {
+            "project": "project-unique-url-key",
+            "title": "example title",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Javascript"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "https://example.com/image.png"
+        },
+        {
+            "project": "project-unique-url-key",
+            "title": "example title",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Javascript"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "https://example.com/image.png"
+        },
+        {
+            "project": "project-unique-url-key",
+            "title": "example title",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Javascript"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "https://example.com/image.png"
+        }
+    ]
+}
