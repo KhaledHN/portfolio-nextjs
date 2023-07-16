@@ -27,16 +27,16 @@
             "image": "/projectsAssets/Colorlibs.jpeg"
         },
         {
-            "slug": "project-unique-url-key",
-            "title": "example title",
+            "slug": "hubspot",
+            "title": "HubSpot",
             "technologies": [
                 "string",
                 "string"
             ],
-            "body": "Long text",
+            "body": "HubSpot is a leading inbound marketing and CRM platform that helps businesses attract, engage, and delight customers. It offers a comprehensive suite of tools for marketing, sales, and customer service, along with educational resources through HubSpot Academy. With a wide user base and a focus on inbound methodology, HubSpot remains a prominent force in digital marketing and customer relationship management.",
             "demo_url": "https://example.com/",
             "code_url": "https://github.com/khaledhn/xyz",
-            "image": "https://example.com/image.png"
+            "image": "/projectsAssets/HubSpot.webp"
         },
         {
             "slug": "project-unique-url-key",
@@ -48,7 +48,7 @@
             "body": "Long text",
             "demo_url": "https://example.com/",
             "code_url": "https://github.com/khaledhn/xyz",
-            "image": "https://example.com/image.png"
+            "image": "/public/projectsAssets/white23.png"
         }
     ]
 }

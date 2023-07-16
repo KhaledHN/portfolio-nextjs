@@ -1,42 +1,33 @@
-/* eslint-disable react/no-unescaped-entities */
-import Image from "next/image";
-
-import Link from "next/link";
+import { useState, useEffect } from "react";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
+  const [projectsData, setprojectsData] = useState([]);
+
+  useEffect(() => {
+    fetch("/api/projects")
+      .then((res) => res.json())
+      .then((response) => setprojectsData(response.projects));
+  }, []);
+
+  const projectsList = projectsData.map((project, key) => (
+    <ProjectItem
+      title={project.title}
+      backgroundImg={project.image}
+      slug={project.slug}
+      key={key}
+    />
+  ));
+
   return (
     <div id="projects" className="w-full">
       <div className="max-w-[1240px] mx-auto p-4 py-16">
         <p className="text-xl tracking-widest uppercase text-[#5651e5]">
           Projects
         </p>
-        <h2 className="py-2">What I've Built</h2>
-        <div className="grid md:grid-cols-2 gap-8">
-          <ProjectItem
-            title="Travelious"
-            backgroundImg="/projectsAssets/Travelious.jpeg"
-            projectUrl="/Travel"
-          />
+        <h2 className="py-2">What I`ve Built</h2>
 
-          <ProjectItem
-            title="ColorLib"
-            backgroundImg="/projectsAssets/Colorlibs.jpeg"
-            projectUrl="Colorlib"
-          />
-
-          <ProjectItem
-            title="white3"
-            backgroundImg="/projectsAssets/white23.png"
-            projectUrl="White3"
-          />
-
-          <ProjectItem
-            title="white4"
-            backgroundImg="/projectsAssets/white4.png"
-            projectUrl="White4"
-          />
-        </div>
+        <div className="grid md:grid-cols-2 gap-8">{projectsList}</div>
       </div>
     </div>
   );
