@@ -1,9 +1,10 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TraveL from "../projects assets/Travelious.jpeg";
+import TraveL from "../public/projectsAssets/Travelious.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Navbar from "@/components/Navbar";
+import projectsData from "../pages/api/Projects.json";
 
 const Travel = () => {
   return (
@@ -15,11 +16,11 @@ const Travel = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={TraveL}
+          src={projectsData.projects[0].image}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">Travelious</h2>
+          <h2 className="py-2">{projectsData.projects[0].title}</h2>
           <h3>React | Typescript | Tailwind</h3>
         </div>
       </div>
@@ -28,16 +29,7 @@ const Travel = () => {
         <div className="col-span-4">
           <p className="p-4 text-[#5651e5] ">Project</p>
           <h2 className=" p-4">Overview</h2>
-          <p className="p-4">
-            Travelious is a comprehensive travel platform that uses advanced
-            technology and personalized recommendations to simplify travel
-            planning, offering a seamless booking experience and extensive
-            destination information. It provides tailored suggestions based on
-            user preferences, offers a wide range of travel resources, and
-            fosters a community of travelers. Overall, Travelious aims to
-            enhance the travel experience and empower individuals to embark on
-            memorable journeys.
-          </p>
+          <p className="p-4">{projectsData.projects[0].body}</p>
           <div className="pl-4">
             <button className="px-8 py-2 mt-4 mr-8">Demo</button>
             <button className="px-8 py-2 mt-4">Code</button>

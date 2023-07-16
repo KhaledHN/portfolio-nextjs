@@ -1,0 +1,53 @@
+{
+    "projects": [
+        {
+            "slug": "Trav",
+            "title": "Travelious",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Typescript"
+            ],
+            "body": "Travelious is a comprehensive travel platform that uses advanced technology and personalized recommendations to simplify travel planning, offering a seamless booking experience and extensive destination information. It provides tailored suggestions based on user preferences, offers a wide range of travel resources, and fosters a community of travelers. Overall, Travelious aims to enhance the travel experience and empower individuals to embark on memorable journeys.",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn",
+            "image": "/projectsAssets/Travelious.jpeg"
+        },
+        {
+            "slug": "project-unique-url-key",
+            "title": "example title",
+            "technologies": [
+                "string",
+                "string"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "https://example.com/image.png"
+        },
+        {
+            "slug": "project-unique-url-key",
+            "title": "example title",
+            "technologies": [
+                "string",
+                "string"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "https://example.com/image.png"
+        },
+        {
+            "slug": "project-unique-url-key",
+            "title": "example title",
+            "technologies": [
+                "string",
+                "string"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "https://example.com/image.png"
+        }
+    ]
+}
