@@ -1,11 +1,14 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import whiteImg4 from "../assets/white4.png";
+
 import { RiRadioButtonFill } from "react-icons/ri";
 import Navbar from "@/components/Navbar";
+import projectsData from "../api/Projects.json";
 
-const White4 = () => {
+const ProjectPage = () => {
+  const myProject = projectsData.projects[0];
+
   return (
     <div className="w-full ">
       <Navbar isDark={true} />
@@ -15,12 +18,12 @@ const White4 = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={whiteImg4}
+          src={myProject.image}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">White4</h2>
-          <h3>Technologys...</h3>
+          <h2 className="py-2">HubSpot</h2>
+          <h3>React | Typescript | Tailwind</h3>
         </div>
       </div>
 
@@ -28,9 +31,21 @@ const White4 = () => {
         <div className="col-span-4">
           <p className="p-4 text-[#5651e5] ">Project</p>
           <h2 className=" p-4">Overview</h2>
-          <p className="p-4">Text Overview</p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <p className="p-4">{myProject.body}</p>
+          <form className="pl-4 py-2">
+            <a
+              href={myProject.demo_url}
+              className="px-8 py-3 mt-4 mr-8 rounded-xl text-white font-bold bg-gradient-to-r from-[#5752e5] to-[#6f9dff]  "
+            >
+              Demo
+            </a>
+            <a
+              href={myProject.code_url}
+              className="px-8 py-3 mt-4 rounded-xl text-white font-bold bg-gradient-to-r from-[#5752e5] to-[#6f9dff]  "
+            >
+              Code
+            </a>
+          </form>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -59,11 +74,11 @@ const White4 = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className=" underline cursor-pointer">Back</p>
+          <p className=" underline py-5 pl-4  cursor-pointer">Back</p>
         </Link>
       </div>
     </div>
   );
 };
 
-export default White4;
+export default ProjectPage;
