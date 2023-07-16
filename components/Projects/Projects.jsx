@@ -3,10 +3,6 @@ import Image from "next/image";
 
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
-import TraveL from "../projects assets/Travelious.jpeg";
-import whiteImg2 from "../assets/white2.png";
-import whiteImg3 from "../assets/white23.png";
-import whiteImg4 from "../assets/white4.png";
 
 const Projects = () => {
   return (
@@ -19,25 +15,25 @@ const Projects = () => {
         <div className="grid md:grid-cols-2 gap-8">
           <ProjectItem
             title="Travelious"
-            backgroundImg={TraveL}
+            backgroundImg="/projectsAssets/Travelious.jpeg"
             projectUrl="/Travel"
           />
 
           <ProjectItem
             title="white2"
-            backgroundImg={whiteImg2}
+            backgroundImg="/projectsAssets/white2.png"
             projectUrl="White2"
           />
 
           <ProjectItem
             title="white3"
-            backgroundImg={whiteImg3}
+            backgroundImg="/projectsAssets/white23.png"
             projectUrl="White3"
           />
 
           <ProjectItem
             title="white4"
-            backgroundImg={whiteImg4}
+            backgroundImg="/projectsAssets/white4.png"
             projectUrl="White4"
           />
         </div>

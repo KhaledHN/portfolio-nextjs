@@ -1,10 +1,9 @@
 import Head from "next/head";
 import { Inter } from "next/font/google";
-import Navbar from "@/components/Navbar";
 import About from "@/components/About";
 import Main from "/components/Main.jsx";
 import Skills from "@/components/Skills.jsx";
-import Projects from "@/components/Projects";
+import Projects from "@/components/Projects/Projects";
 import Contact from "@/components/Contact";
 const inter = Inter({ subsets: ["latin"] });
 
