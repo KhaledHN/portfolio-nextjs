@@ -1,0 +1,18 @@
+{
+    "ContactItems": [
+        {
+            "project": "project-unique-url-key",
+            "title": "Travelious",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Javascript"
+            ],
+            "body": "Long text",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn",
+            "image": "/public/Projects assets/Travelious.jpeg"
+        }
+    ]
+}
+    

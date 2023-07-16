@@ -4,7 +4,7 @@ import { AiOutlineMail } from "react-icons/ai";
 import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import Link from "next/link";
-import Navbar from "./Navbar";
+import Navbar from "./Navbar/Navbar";
 
 const Main = () => {
   return (

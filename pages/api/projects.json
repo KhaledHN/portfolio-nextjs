@@ -1,25 +1,24 @@
 {
     "projects": [
         {
-            "project": "project-unique-url-key",
-            "title": "Travelious",
+            "slug": "Travelios",
+            "title": "Travelios",
             "technologies": [
                 "React",
                 "Tailwind",
-                "Javascript"
+                "Typescript"
             ],
-            "body": "Long text",
+            "body": "Travelious is a comprehensive travel platform that uses advanced technology and personalized recommendations to simplify travel planning, offering a seamless booking experience and extensive destination information. It provides tailored suggestions based on user preferences, offers a wide range of travel resources, and fosters a community of travelers. Overall, Travelious aims to enhance the travel experience and empower individuals to embark on memorable journeys.",
             "demo_url": "https://example.com/",
-            "code_url": "https://github.com/khaledhn/xyz",
+            "code_url": "https://github.com/khaledhn",
             "image": "/public/Projects assets/Travelious.jpeg"
         },
         {
-            "project": "project-unique-url-key",
+            "slug": "project-unique-url-key",
             "title": "example title",
             "technologies": [
-                "React",
-                "Tailwind",
-                "Javascript"
+                "string",
+                "string"
             ],
             "body": "Long text",
             "demo_url": "https://example.com/",
@@ -27,12 +26,11 @@
             "image": "https://example.com/image.png"
         },
         {
-            "project": "project-unique-url-key",
+            "slug": "project-unique-url-key",
             "title": "example title",
             "technologies": [
-                "React",
-                "Tailwind",
-                "Javascript"
+                "string",
+                "string"
             ],
             "body": "Long text",
             "demo_url": "https://example.com/",
@@ -40,12 +38,11 @@
             "image": "https://example.com/image.png"
         },
         {
-            "project": "project-unique-url-key",
+            "slug": "project-unique-url-key",
             "title": "example title",
             "technologies": [
-                "React",
-                "Tailwind",
-                "Javascript"
+                "string",
+                "string"
             ],
             "body": "Long text",
             "demo_url": "https://example.com/",

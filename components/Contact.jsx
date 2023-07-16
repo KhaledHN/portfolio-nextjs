@@ -32,7 +32,7 @@ const Contact = () => {
                 <p>Front-End Developer</p>
                 <p>
                   I am available for freelance or part-time positions. Contact
-                  me and let's talk.
+                  me and <span className="text-[#5651e1]">Let's talk.</span>
                 </p>
               </div>
               <div>
