@@ -20,9 +20,9 @@ const Projects = () => {
           />
 
           <ProjectItem
-            title="white2"
-            backgroundImg="/projectsAssets/white2.png"
-            projectUrl="White2"
+            title="ColorLib"
+            backgroundImg="/projectsAssets/Colorlibs.jpeg"
+            projectUrl="Colorlib"
           />
 
           <ProjectItem

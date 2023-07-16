@@ -1,10 +1,11 @@
 import Link from "next/link";
 import Image from "next/image";
-import whiteImg2 from "../assets/white2.png";
+import ColorLib from "../public/projectsAssets/Colorlibs.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Navbar from "@/components/Navbar";
+import projectsData from "../pages/api/Projects.json";
 
-const White2 = () => {
+const Colorlib = () => {
   return (
     <div className="w-full ">
       <Navbar isDark={true} />
@@ -14,11 +15,11 @@ const White2 = () => {
           className="absolute z-1"
           layout="fill"
           objectFit="cover"
-          src={whiteImg2}
+          src={projectsData.projects[1].image}
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">White2</h2>
+          <h2 className="py-2">{projectsData.projects[1].title}</h2>
           <h3>Technologys...</h3>
         </div>
       </div>
@@ -27,9 +28,21 @@ const White2 = () => {
         <div className="col-span-4">
           <p className="p-4 text-[#5651e5] ">Project</p>
           <h2 className=" p-4">Overview</h2>
-          <p className="p-4">Text Overview</p>
-          <button className="px-8 py-2 mt-4 mr-8">Demo</button>
-          <button className="px-8 py-2 mt-4">Code</button>
+          <p className="p-4">{projectsData.projects[1].body}</p>
+          <form className="py-2 pl-4">
+            <a
+              href={projectsData.projects[1].demo_url}
+              className="px-8 py-3 mt-4 mr-8 rounded-xl bg-gradient-to-r from-[#5752e5] to-[#6f9dff]  "
+            >
+              Demo
+            </a>
+            <a
+              href={projectsData.projects[1].code_url}
+              className="px-8 py-3 mt-4 rounded-xl bg-gradient-to-r from-[#5752e5] to-[#6f9dff]"
+            >
+              Code
+            </a>
+          </form>
         </div>
         <div className="col-span-4 md:col-span-1 shadow-xl shadow-gray-400 rounded-xl p-4">
           <div className="p-2">
@@ -58,11 +71,11 @@ const White2 = () => {
           </div>
         </div>
         <Link href="/#projects">
-          <p className=" underline cursor-pointer">Back</p>
+          <p className=" underline py-5 pl-4 cursor-pointer">Back</p>
         </Link>
       </div>
     </div>
   );
 };
 
-export default White2;
+export default Colorlib;

@@ -14,16 +14,17 @@
             "image": "/projectsAssets/Travelious.jpeg"
         },
         {
-            "slug": "project-unique-url-key",
-            "title": "example title",
+            "slug": "Colib",
+            "title": "ColorLib",
             "technologies": [
-                "string",
-                "string"
+                "jQuery",
+                "PHP",
+                "HSTS"
             ],
-            "body": "Long text",
-            "demo_url": "https://example.com/",
-            "code_url": "https://github.com/khaledhn/xyz",
-            "image": "https://example.com/image.png"
+            "body": "Colorlib is a renowned web development company known for its high-quality website templates, WordPress themes, and free resources. They have a strong community presence and provide excellent customer support while staying up-to-date with the latest web design trends and technologies.",
+            "demo_url": "https://colorlib.com/wp/",
+            "code_url": "https://github.com/khaledhn",
+            "image": "/projectsAssets/Colorlibs.jpeg"
         },
         {
             "slug": "project-unique-url-key",
