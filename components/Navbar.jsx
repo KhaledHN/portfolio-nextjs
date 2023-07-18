@@ -44,7 +44,7 @@ const Navbar = ({ isDark }) => {
       }
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="">
+        <Link href="/#home">
           <Image
             src="/navbar assets/navLogo.png"
             alt=""
@@ -95,7 +95,7 @@ const Navbar = ({ isDark }) => {
         >
           <div>
             <div className="flex w-full items-center justify-between">
-              <Link onClick={() => setNav(false)} href="">
+              <Link onClick={() => setNav(false)} href="/#home">
                 <Image
                   src="/navbar assets/navLogo.png"
                   alt=""
@@ -117,33 +117,28 @@ const Navbar = ({ isDark }) => {
             </div>
             <div>
               <ul className="py-4 flex-col">
-                <Link href="">
+                <Link href="/#home">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
-                    {" "}
                     Home
                   </li>
                 </Link>
                 <Link href="/#about">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
-                    {" "}
                     About
                   </li>
                 </Link>
                 <Link href="/#skills">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
-                    {" "}
                     Skills
                   </li>
                 </Link>
                 <Link href="/#projects">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
-                    {" "}
                     Projects
                   </li>
                 </Link>
                 <Link href="/#contact">
                   <li onClick={() => setNav(false)} className="py-4 text-sm">
-                    {" "}
                     Contact
                   </li>
                 </Link>

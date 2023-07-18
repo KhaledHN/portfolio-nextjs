@@ -30,25 +30,28 @@
             "slug": "hubspot",
             "title": "HubSpot",
             "technologies": [
-                "string",
-                "string"
+                "React",
+                "core-js",
+                "Impact"
             ],
             "body": "HubSpot is a leading inbound marketing and CRM platform that helps businesses attract, engage, and delight customers. It offers a comprehensive suite of tools for marketing, sales, and customer service, along with educational resources through HubSpot Academy. With a wide user base and a focus on inbound methodology, HubSpot remains a prominent force in digital marketing and customer relationship management.",
-            "demo_url": "https://example.com/",
+            "demo_url": "https://www.hubspot.com/",
             "code_url": "https://github.com/khaledhn/xyz",
             "image": "/projectsAssets/HubSpot.webp"
         },
         {
-            "slug": "project-unique-url-key",
-            "title": "example title",
+            "slug": "knapsack",
+            "title": "Knapsack",
             "technologies": [
-                "string",
-                "string"
+                "jQuery",
+                "JavaScript",
+                "core-js",
+                "Hotjar"
             ],
-            "body": "Long text",
-            "demo_url": "https://example.com/",
+            "body": "The knapsack problem is a classic optimization problem where the goal is to find the best combination of items to include in a knapsack, subject to its weight capacity. It can be of different types, including 0/1 knapsack (items are either included entirely or not at all), fractional knapsack (items can be divided), and multiple knapsack (multiple knapsacks with varying capacities). The problem can be solved using dynamic programming, greedy algorithms, branch and bound, or metaheuristic techniques like genetic algorithms. Knapsack problems have practical applications in resource allocation, finance, cloud computing, manufacturing, and more.",
+            "demo_url": "https://www.knapsack.cloud",
             "code_url": "https://github.com/khaledhn/xyz",
-            "image": "/public/projectsAssets/white23.png"
+            "image": "/projectsAssets/knapsack.webp"
         }
     ]
 }

@@ -29,22 +29,22 @@ const Main = () => {
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://www.linkedin.com/in/khaledHN/">
-                <FaLinkedinIn />
+                <FaLinkedinIn className="text-[#5651e1] " />
               </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://github.com/KhaledHN">
-                <FaGithub />
+                <FaGithub className="text-[#5651e1]" />
               </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJqXxhFbpRhxNlVPhLsSwWrlkqhLtXRKFkCtRfxVBnfFHZrnmZNmzdTStkWKskMNjXHPRhg">
-                <AiOutlineMail />
+                <AiOutlineMail className="text-[#5651e1]" />
               </Link>
             </div>
             <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://about.me/khaledhazem">
-                <BsFillPersonLinesFill />
+                <BsFillPersonLinesFill className="text-[#5651e1]" />
               </Link>
             </div>
           </div>
