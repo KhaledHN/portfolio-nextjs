@@ -1,13 +1,22 @@
-import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-
+import { useRouter } from "next/router";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Navbar from "@/components/Navbar";
 import projectsData from "../api/Projects.json";
 
 const ProjectPage = () => {
-  const myProject = projectsData.projects[0];
+  const router = useRouter();
+  const { slug } = router.query;
+
+  const myProject = projectsData.projects.find(
+    (project) => project.slug === slug
+  );
+
+  if (!myProject) {
+    // You can choose to redirect to a custom 404 page or display a message
+    return <div>Project not found or invalid slug.</div>;
+  }
 
   return (
     <div className="w-full ">
@@ -22,7 +31,7 @@ const ProjectPage = () => {
           alt="/"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
-          <h2 className="py-2">HubSpot</h2>
+          <h2 className="py-2">{myProject.title}</h2>
           <h3>React | Typescript | Tailwind</h3>
         </div>
       </div>

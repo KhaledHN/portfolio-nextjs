@@ -2,20 +2,42 @@ import { useState, useEffect } from "react";
 import ProjectItem from "./ProjectItem";
 
 const Projects = () => {
-  const [projectsData, setprojectsData] = useState([]);
+  const [projectsData, setProjectsData] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
   useEffect(() => {
     fetch("/api/projects")
-      .then((res) => res.json())
-      .then((response) => setprojectsData(response.projects));
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch project data");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setProjectsData(data.projects);
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+      });
   }, []);
 
-  const projectsList = projectsData.map((project, key) => (
+  if (loading) {
+    return <div>Loading...</div>; // Show a loading state while fetching data
+  }
+
+  if (error) {
+    return <div>Error: {error}</div>; // Display an error message if fetch fails
+  }
+
+  const projectsList = projectsData.map((project) => (
     <ProjectItem
       title={project.title}
       backgroundImg={project.image}
       slug={project.slug}
-      key={key}
+      key={project.slug} // Use a unique identifier as the key
     />
   ));
 
