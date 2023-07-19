@@ -3,13 +3,17 @@ import Link from "next/link";
 import React, { useState, useEffect } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
-import Drawer from "./DrawerNav";
+import DrawerNav from "./DrawerNav";
 
-const Navbar = ({ isDark }) => {
-  const [nav, setNav] = useState(false);
-  const [shadow, setShadow] = useState(false);
-  const [navBg, setNavBg] = useState("#ecf0f3");
-  const [linkColor, setLinkColor] = useState("#1f2937");
+interface NavbarProps {
+  isDark: boolean;
+}
+
+const Navbar: React.FC<NavbarProps> = ({ isDark }) => {
+  const [nav, setNav] = useState<boolean>(false);
+  const [shadow, setShadow] = useState<boolean>(false);
+  const [navBg, setNavBg] = useState<string>("#ecf0f3");
+  const [linkColor, setLinkColor] = useState<string>("#1f2937");
   const router = useRouter();
 
   useEffect(() => {
@@ -35,6 +39,7 @@ const Navbar = ({ isDark }) => {
     window.addEventListener("scroll", checkScrollTop);
     return () => window.removeEventListener("scroll", checkScrollTop);
   }, []);
+
   return (
     <div
       style={{ backgroundColor: `${navBg}` }}
@@ -43,12 +48,12 @@ const Navbar = ({ isDark }) => {
       } fixed w-full h-20 z-[100] duration-200`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <Link href="">
+        <Link href="/">
           <Image
             src="/navbar assets/navLogo.png"
             alt=""
-            width="100"
-            height="50"
+            width={100}
+            height={50}
           />
         </Link>
 
@@ -82,7 +87,7 @@ const Navbar = ({ isDark }) => {
       </div>
 
       {/* drawer menu */}
-      <Drawer nav={nav} handleNav={handleNav} />
+      <DrawerNav nav={nav} handleNav={handleNav} />
     </div>
   );
 };

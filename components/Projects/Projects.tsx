@@ -1,10 +1,16 @@
-import { useState, useEffect } from "react";
+import React, { useState, useEffect } from "react";
 import ProjectItem from "./ProjectItem";
 
-const Projects = () => {
-  const [projectsData, setProjectsData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
+interface Project {
+  title: string;
+  image: string;
+  slug: string;
+}
+
+const Projects: React.FC = () => {
+  const [projectsData, setProjectsData] = useState<Project[]>([]);
+  const [loading, setLoading] = useState<boolean>(true);
+  const [error, setError] = useState<string | null>(null);
 
   useEffect(() => {
     fetch("/api/projects")

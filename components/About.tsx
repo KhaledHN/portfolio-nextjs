@@ -1,7 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
 
-const About = () => {
+const About: React.FC = () => {
   return (
     <div
       id="about"
@@ -15,20 +14,19 @@ const About = () => {
           <h2 className="py-4">Who I Am</h2>
           <p className="py-2 text-gray-600">
             I have always had a knack for technology and working with computers.
-            In 2019 I started working with c# to make small games on Unity, then
+            In 2019 I started working with C# to make small games on Unity, then
             I started working with HTML & CSS to make some minor edits on a
-            small website that I was operating. What thought was just a few
+            small website that I was operating. What I thought was just a few
             small edits turned into love for programming.
           </p>
           <p className="py-2 text-gray-600">
-            Fascinated with how intricate programming can be I was quickly drawn
-            to learn more. I started learning javascript and was even more
-            enthused with making websites interactive. I now I started
-            freelancing for e-commerce companies on shopify platform. I am now
-            spending my time building projects with REACT JS, NEXT JS, and
-            learning new technologies.
+            Fascinated with how intricate programming can be, I was quickly drawn
+            to learn more. I started learning JavaScript and was even more
+            enthused with making websites interactive. I started freelancing for
+            e-commerce companies on the Shopify platform. Now, I am spending my
+            time building projects with React JS, Next JS, and learning new technologies.
           </p>
-          <p className="py-2 text-gray-600 underline curser-pointer">
+          <p className="py-2 text-gray-600 underline cursor-pointer">
             Check out some of my latest projects.
           </p>
         </div>

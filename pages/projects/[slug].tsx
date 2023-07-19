@@ -1,7 +1,8 @@
-import Link from "next/link";
+import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
 import { RiRadioButtonFill } from "react-icons/ri";
+import Link from "next/link";
 import Navbar from "@/components/NavBar/Navbar";
 import projectsData from "../api/Projects.json";
 
@@ -9,19 +10,20 @@ const ProjectPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  const myProject = projectsData.projects.find(
-    (project) => project.slug === slug
-  );
+  const myProject = projectsData.projects.find((project) => project.slug === slug);
 
   if (!myProject) {
     // You can choose to redirect to a custom 404 page or display a message
     return <div>Project not found or invalid slug.</div>;
   }
 
+  // Conditionally set the isDark prop for the Navbar
+  const isDarkNavbar = true;
+
   return (
     <div className="w-full ">
-      <Navbar isDark={true} />
-      <div className="w-sceen h-[30vh] lg:h-[40vh] relative ">
+      <Navbar isDark={isDarkNavbar} />
+      <div className="w-screen h-[30vh] lg:h-[40vh] relative ">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10 " />
         <Image
           className="absolute z-1"
@@ -36,7 +38,7 @@ const ProjectPage = () => {
         </div>
       </div>
 
-      <div className="mac-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gab-8 pt-8 ">
+      <div className="max-w-[1240px] mx-auto p-2 grid md:grid-cols-5 gap-8 pt-8 ">
         <div className="col-span-4">
           <p className="p-4 text-[#5651e5] ">Project</p>
           <h2 className=" p-4">Overview</h2>
@@ -60,25 +62,12 @@ const ProjectPage = () => {
           <div className="p-2">
             <p className="text-center font-bold pb-2">Technologies</p>
             <div className="grid grid-cols-3 md:grid-cols-1">
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
-
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
-
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
-
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
-
-              <p className="text-gray-600 py-2 flex items-center">
-                <RiRadioButtonFill className="pr-1" /> React
-              </p>
+              {/* Loop through the technologies from myProject */}
+              {myProject.technologies.map((technology) => (
+                <p className="text-gray-600 py-2 flex items-center" key={technology}>
+                  <RiRadioButtonFill className="pr-1" /> {technology}
+                </p>
+              ))}
             </div>
           </div>
         </div>
