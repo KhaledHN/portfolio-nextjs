@@ -1,4 +1,6 @@
 import React from "react";
+import Image from "next/image";
+import Link from "next/link";
 
 const About: React.FC = () => {
   return (
@@ -27,14 +29,19 @@ const About: React.FC = () => {
             time building projects with React JS, Next JS, and learning new technologies.
           </p>
           <p className="py-2 text-gray-600 underline cursor-pointer">
+            <Link href="/#projects">
             Check out some of my latest projects.
+            
+            </Link>
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex item-center justify-center hover:scale-105 ease-in duration-300">
-          <img
+          <Image
             className="rounded-xl"
-            src="/about assets/profilePic.jpeg"
+            src="/aboutassets/ProfilePic.jpg"
             alt="/"
+            width={443}
+            height={316}
           />
         </div>
       </div>

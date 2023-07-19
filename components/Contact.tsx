@@ -18,10 +18,12 @@ const Contact = () => {
           <div className="col-span-3 lg:col-span-2 w-full h-full shadow-xl shadow-gray-400 rounded-xl p-4 ">
             <div className=" lg:p-3 h-full ">
               <div>
-                <img
+                <Image
                   className=" rounded-xl hover:scale-105 ease-in duration-300 "
-                  src="contact assets/contactpic.jpg"
+                  src="/contact assets/contactpic.jpg"
                   alt="/"
+                  width={500}
+                  height={350}
                 />
               </div>
               <div>
