@@ -3,7 +3,7 @@ import Image from "next/image";
 import { useRouter } from "next/router";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import Navbar from "@/components/NavBar/Navbar";
+import Navbar from "../../components/NavBar/Navbar";
 import projectsData from "../api/Projects.json";
 
 const ProjectPage = () => {
@@ -13,8 +13,10 @@ const ProjectPage = () => {
   const myProject = projectsData.projects.find((project) => project.slug === slug);
 
   if (!myProject) {
-    // You can choose to redirect to a custom 404 page or display a message
-    return <div>Project not found or invalid slug.</div>;
+    <div className="content-center bg-red-600 pading-[150px] ">
+      <h1 className="font-bold text-white tex ">404</h1>
+      <h2 className="font-serif"></h2>
+    </div>
   }
 
   // Conditionally set the isDark prop for the Navbar
@@ -65,7 +67,7 @@ const ProjectPage = () => {
               {/* Loop through the technologies from myProject */}
               {myProject.technologies.map((technology) => (
                 <p className="text-gray-600 py-2 flex items-center" key={technology}>
-                  <RiRadioButtonFill className="pr-1" /> {technology}
+                  <RiRadioButtonFill className="pr-1 text-col" /> {technology}
                 </p>
               ))}
             </div>

@@ -16,7 +16,7 @@ import Navbar from "./NavBar/Navbar";
           <h1 className="pt-20 pb-4 text-gray-700">
             Hi, I`m <span className="text-[#5651e1]">Khaled</span>{" "}
           </h1>
-          <h1 className="py-4 text-gray-700">A Front-End Developer</h1>
+          <h1 className="py-4 scale-95 text-gray-700">A Front-End Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">
             I`m a passionate trainee web developer specializing in React,
             Tailwind CSS, GitHub, and Vercel. Skilled in creating engaging web
