@@ -14,7 +14,7 @@ import Navbar from "./NavBar/Navbar";
       <div className="max-w-[1240px] w-full h-full mx-auto py-10 flex justify-center items-center">
         <div>
           <h1 className="pt-20 pb-4 text-gray-700">
-            Hi, I`m <span className="text-[#5651e1]">Khaled</span>{" "}
+            Hi, I`m <span className="text-[#5651e1]">Khaled</span>
           </h1>
           <h1 className="py-4 scale-95 text-gray-700">A Front-End Developer</h1>
           <p className="py-4 text-gray-600 max-w-[70%] m-auto">

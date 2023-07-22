@@ -38,8 +38,8 @@ const About: React.FC = () => {
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex item-center justify-center hover:scale-105 ease-in duration-300">
           <Image
             className="rounded-xl"
-            src="/aboutassets/ProfilePic.jpg"
-            alt="/"
+            src="/aboutAssets/ProfilePic.jpg"
+            alt="image of me"
             width={443}
             height={316}
           />

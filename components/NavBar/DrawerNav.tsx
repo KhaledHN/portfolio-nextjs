@@ -30,8 +30,8 @@ function DrawerNav(props: DrawerNavProps): JSX.Element {
           <div className="flex w-full items-center justify-between">
             <Link onClick={handleNav} href="">
               <Image
-                src="/navbar assets/navLogo.png"
-                alt=""
+                src="/navbarAssets/navLogo.png"
+                alt="navbarlogo"
                 width="100"
                 height="50"
               />
@@ -52,31 +52,26 @@ function DrawerNav(props: DrawerNavProps): JSX.Element {
             <ul className="py-4 flex-col">
               <Link href="">
                 <li onClick={handleNav} className="py-4 text-sm">
-                  {" "}
                   Home
                 </li>
               </Link>
               <Link href="/#about">
                 <li onClick={handleNav} className="py-4 text-sm">
-                  {" "}
                   About
                 </li>
               </Link>
               <Link href="/#skills">
                 <li onClick={handleNav} className="py-4 text-sm">
-                  {" "}
                   Skills
                 </li>
               </Link>
               <Link href="/#projects">
                 <li onClick={handleNav} className="py-4 text-sm">
-                  {" "}
                   Projects
                 </li>
               </Link>
               <Link href="/#contact">
                 <li onClick={handleNav} className="py-4 text-sm">
-                  {" "}
                   Contact
                 </li>
               </Link>
