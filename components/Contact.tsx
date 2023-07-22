@@ -100,8 +100,13 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/">
 <<<<<<< HEAD
+<<<<<<< HEAD
             <div className="rounded-full scale-200 shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className=" h-5 w-5 text-[#5651e1]" scale={30} />
+=======
+            <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
+              <HiOutlineChevronDoubleUp className="text-[#5651e5] " size={30} />
+>>>>>>> parent of 59100aa (Making contact section function with formspree)
 =======
             <div className="rounded-full shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
               <HiOutlineChevronDoubleUp className="text-[#5651e5] " size={30} />
