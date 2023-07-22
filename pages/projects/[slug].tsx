@@ -13,10 +13,10 @@ const ProjectPage = () => {
   const myProject = projectsData.projects.find((project) => project.slug === slug);
 
   if (!myProject) {
-    <div className="content-center bg-red-600 pading-[150px] ">
-      <h1 className="font-bold text-white tex ">404</h1>
-      <h2 className="font-serif"></h2>
+    return(
+    <div >
     </div>
+    )
   }
 
   // Conditionally set the isDark prop for the Navbar
@@ -32,7 +32,7 @@ const ProjectPage = () => {
           layout="fill"
           objectFit="cover"
           src={myProject.image}
-          alt="/"
+          alt="projects image"
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
           <h2 className="py-2">{myProject.title}</h2>
