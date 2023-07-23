@@ -1,30 +1,59 @@
 import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
+import { useEffect, useState } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Navbar from "../../components/NavBar/Navbar";
-import projectsData from "../api/Projects.json";
+
+interface Project {
+  title: string;
+  slug: string;
+  image: string;
+  body: string;
+  technologies: string[];
+  demo_url: string;
+  code_url: string;
+}
 
 const ProjectPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  const myProject = projectsData.projects.find((project) => project.slug === slug);
+    const [myProject, setMyProject] = useState<Project>();
+    const [loading, setLoading] = useState<boolean>(true);
+    const [error, setError] = useState<string | null>(null);
+  
+    useEffect(() => {
+      fetch("/api/projects")
+        .then((res) => {
+          if (!res.ok) {
+            throw new Error("Failed to fetch project data");
+          }
+          return res.json();
+        })
+        .then((data) => {
+          setMyProject((data.projects as Project[]).find((project) => project.slug === slug));
+          setLoading(false);
+        })
+        .catch((error) => {
+          setError(error.message);
+          setLoading(false);
+        });
+    }, [slug]);
+  
+    if (loading || !myProject) {
+      return <div>Loading...</div>; // Show a loading state while fetching data
+    }
+  
+    if (error) {
+      return <div>Error: {error}</div>; // Display an error message if fetch fails
+    }
 
-  if (!myProject) {
-    return(
-    <div >
-    </div>
-    )
-  }
-
-  // Conditionally set the isDark prop for the Navbar
-  const isDarkNavbar = true;
-
+    
   return (
     <div className="w-full ">
-      <Navbar isDark={isDarkNavbar} />
+      <Navbar isDark={true} />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative ">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10 " />
         <Image
@@ -36,7 +65,7 @@ const ProjectPage = () => {
         />
         <div className="absolute top-[70%] max-w-[1240px] w-full left-[50%] right-[50%] translate-x-[-50%] translate-y-[-50%] text-white z-10 p-2 ">
           <h2 className="py-2">{myProject.title}</h2>
-          <h3>React | Typescript | Tailwind</h3>
+          <h3>{myProject.technologies.join(' | ')}</h3>
         </div>
       </div>
 
