@@ -1,0 +1,57 @@
+{
+    "projects": [
+        {
+            "slug": "Trav",
+            "title": "Travelious",
+            "technologies": [
+                "React",
+                "Tailwind",
+                "Typescript"
+            ],
+            "body": "Travelious is a comprehensive travel platform that uses advanced technology and personalized recommendations to simplify travel planning, offering a seamless booking experience and extensive destination information. It provides tailored suggestions based on user preferences, offers a wide range of travel resources, and fosters a community of travelers. Overall, Travelious aims to enhance the travel experience and empower individuals to embark on memorable journeys.",
+            "demo_url": "https://example.com/",
+            "code_url": "https://github.com/khaledhn",
+            "image": "/assets/Travelious.jpeg"
+        },
+        {
+            "slug": "Colib",
+            "title": "ColorLib",
+            "technologies": [
+                "jQuery",
+                "PHP",
+                "HSTS"
+            ],
+            "body": "Colorlib is a renowned web development company known for its high-quality website templates, WordPress themes, and free resources. They have a strong community presence and provide excellent customer support while staying up-to-date with the latest web design trends and technologies.",
+            "demo_url": "https://colorlib.com/wp/",
+            "code_url": "https://github.com/khaledhn",
+            "image": "/assets/Colorlibs.jpeg"
+        },
+        {
+            "slug": "hubspot",
+            "title": "HubSpot",
+            "technologies": [
+                "React",
+                "core-js",
+                "Impact"
+            ],
+            "body": "HubSpot is a leading inbound marketing and CRM platform that helps businesses attract, engage, and delight customers. It offers a comprehensive suite of tools for marketing, sales, and customer service, along with educational resources through HubSpot Academy. With a wide user base and a focus on inbound methodology, HubSpot remains a prominent force in digital marketing and customer relationship management.",
+            "demo_url": "https://www.hubspot.com/",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "/assets/HubSpot.webp"
+        },
+        {
+            "slug": "knapsack",
+            "title": "Knapsack",
+            "technologies": [
+                "jQuery",
+                "JavaScript",
+                "core-js",
+                "Hotjar"
+            ],
+            "body": "The knapsack problem is a classic optimization problem where the goal is to find the best combination of items to include in a knapsack, subject to its weight capacity. It can be of different types, including 0/1 knapsack (items are either included entirely or not at all), fractional knapsack (items can be divided), and multiple knapsack (multiple knapsacks with varying capacities). The problem can be solved using dynamic programming, greedy algorithms, branch and bound, or metaheuristic techniques like genetic algorithms. Knapsack problems have practical applications in resource allocation, finance, cloud computing, manufacturing, and more.",
+            "demo_url": "https://www.knapsack.cloud",
+            "code_url": "https://github.com/khaledhn/xyz",
+            "image": "/assets/knapsack.webp"
+        }
+    ]
+}
