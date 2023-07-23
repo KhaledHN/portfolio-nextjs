@@ -1,5 +1,6 @@
-/* eslint-disable @next/next/no-img-element */
 import React from "react";
+import Link from "next/link";
+import Image from "next/image";
 
 const About = () => {
   return (
@@ -29,14 +30,16 @@ const About = () => {
             learning new technologies.
           </p>
           <p className="py-2 text-gray-600 underline curser-pointer">
-            Check out some of my latest projects.
+            <Link href="/#projects">Check out some of my latest projects.</Link>
           </p>
         </div>
         <div className="w-full h-auto m-auto shadow-xl shadow-gray-400 rounded-xl flex item-center justify-center hover:scale-105 ease-in duration-300">
-          <img
+          <Image
             className="rounded-xl"
-            src="/about assets/profilePic.jpeg"
-            alt="/"
+            src="/assets/profilePic.jpg"
+            alt="a picture of me"
+            width={443}
+            height={316}
           />
         </div>
       </div>
