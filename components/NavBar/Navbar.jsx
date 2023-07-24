@@ -6,10 +6,10 @@ import { useRouter } from "next/router";
 import DrawerNav from "./DrawerNav";
 
 const Navbar = ({ isDark }) => {
-  const [nav, setNav] = useState < boolean > false;
-  const [shadow, setShadow] = useState < boolean > false;
-  const [navBg, setNavBg] = useState < string > "#ecf0f3";
-  const [linkColor, setLinkColor] = useState < string > "#1f2937";
+  const [nav, setNav] = (useState = false);
+  const [shadow, setShadow] = (useState = false);
+  const [navBg, setNavBg] = (useState = "#ecf0f3");
+  const [linkColor, setLinkColor] = (useState = "#1f2937");
   const router = useRouter();
 
   useEffect(() => {
@@ -45,12 +45,7 @@ const Navbar = ({ isDark }) => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image
-            src="/navbar assets/navLogo.png"
-            alt=""
-            width={100}
-            height={50}
-          />
+          <Image src="/assets/navLogo.png" alt="" width={100} height={50} />
         </Link>
 
         {/* desktop menu */}
