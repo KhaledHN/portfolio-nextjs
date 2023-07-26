@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import TraveL from "../projects assets/Travelious.jpeg";
+import TraveL from "../public/assets/Travelious.jpeg";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Navbar from "@/components/Navbar";
 

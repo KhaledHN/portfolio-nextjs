@@ -3,10 +3,10 @@ import Image from "next/image";
 
 import Link from "next/link";
 import ProjectItem from "./ProjectItem";
-import TraveL from "../projects assets/Travelious.jpeg";
-import whiteImg2 from "../assets/white2.png";
-import whiteImg3 from "../assets/white23.png";
-import whiteImg4 from "../assets/white4.png";
+import TraveL from "../public/assets/Travelious.jpeg";
+import whiteImg2 from "../public/assets/white2.png";
+import whiteImg3 from "../public/assets/white23.png";
+import whiteImg4 from "../public/assets/white4.png";
 
 const Projects = () => {
   return (
