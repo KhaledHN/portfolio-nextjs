@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import Navbar from "@/components/Navbar";
+import Navbar from "@/components/NavBar/Navbar";
 
 const ProjectPage = () => {
   const router = useRouter();
