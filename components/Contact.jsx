@@ -7,17 +7,16 @@ import { FaGithub, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 const Contact = () => {
-
   const [state, handleSubmit] = useForm("xeqbogvy");
   if (state.succeeded) {
-      return(
-        <div className="pb-5 px-10 flex justify-center">
-
-          <p className="w-[100px] py-3 rounded-xl text-center bg-gradient-to-r from-[#5752e5] to-[#6f9dff]">  Email sent  </p>
-        </div>
-
-        )
-        
+    return (
+      <div className="pb-5 px-10 flex justify-center">
+        <p className="w-[100px] py-3 rounded-xl text-center bg-gradient-to-r from-[#5752e5] to-[#6f9dff]">
+          {" "}
+          Email sent{" "}
+        </p>
+      </div>
+    );
   }
 
   return (
@@ -34,7 +33,7 @@ const Contact = () => {
               <div>
                 <Image
                   className=" rounded-xl hover:scale-105 ease-in duration-300 "
-                  src="/contactAssets/contactpic.jpg"
+                  src="/assets/contactpic.jpg"
                   alt="image of someone typeing on laptop"
                   width={500}
                   height={350}
@@ -79,7 +78,7 @@ const Contact = () => {
           {/* right */}
           <div className=" col-span-3 w-full h-auto shadow-xl shadow-gray-400 rounded-xl lg:p-4">
             <div className="p-4">
-              <form onSubmit={handleSubmit} >
+              <form onSubmit={handleSubmit}>
                 <div className="flex flex-col py-2">
                   <div className="flex flex-col">
                     <label className="uppercase text-sm py-2">Name</label>
@@ -87,53 +86,52 @@ const Contact = () => {
                       className="border-2 rounded-lg p-3 flex border-gray-300"
                       type="text"
                       id="name"
-                      name="name" 
+                      name="name"
                     />
                   </div>
 
-                  <ValidationError 
-                   prefix="Named" 
-                   field="name"
-                   errors={state.errors}
-                 />
+                  <ValidationError
+                    prefix="Named"
+                    field="name"
+                    errors={state.errors}
+                  />
 
-                <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Email</label>
-                  <input
-                    className="border-2 rounded-lg p-3 flex border-gray-300"
-                    id="email"
-                    type="email" 
-                    name="email"            
+                  <div className=" flex flex-col py-2">
+                    <label className="uppercase text-sm py-2">Email</label>
+                    <input
+                      className="border-2 rounded-lg p-3 flex border-gray-300"
+                      id="email"
+                      type="email"
+                      name="email"
                     />
-                </div>
+                  </div>
 
-                <ValidationError 
-                  prefix="Email" 
-                  field="email"
-                  errors={state.errors}
-                />
+                  <ValidationError
+                    prefix="Email"
+                    field="email"
+                    errors={state.errors}
+                  />
 
-                <div className=" flex flex-col py-2">
-                  <label className="uppercase text-sm py-2">Message</label>
-                  <textarea
-                    className="border-2 rounded-lg p-3 border-gray-300"
-                    rows={10}
-                    id="message"
-                    name="message"
-                  ></textarea>
+                  <div className=" flex flex-col py-2">
+                    <label className="uppercase text-sm py-2">Message</label>
+                    <textarea
+                      className="border-2 rounded-lg p-3 border-gray-300"
+                      rows={10}
+                      id="message"
+                      name="message"
+                    ></textarea>
+                  </div>
+                  <ValidationError
+                    prefix="Message"
+                    field="message"
+                    errors={state.errors}
+                  />
+                  <div className="w-full p-4 text-center text-gray-100 rounded-xl mt-4 bg-gradient-to-r from-[#5752e5] to-[#6f9dff] ">
+                    <button type="submit" disabled={state.submitting}>
+                      Send Message
+                    </button>
+                  </div>
                 </div>
-                <ValidationError 
-                   prefix="Message" 
-                   field="message"
-                   errors={state.errors}
-                 />
-                 <div className="w-full p-4 text-center text-gray-100 rounded-xl mt-4 bg-gradient-to-r from-[#5752e5] to-[#6f9dff] ">
-                  <button type="submit" disabled={state.submitting}>
-                  Send Message
-                </button>
-                 </div>
-                </div>
-                
               </form>
             </div>
           </div>
@@ -141,7 +139,10 @@ const Contact = () => {
         <div className="flex justify-center py-12">
           <Link href="/">
             <div className="rounded-full scale-200 shadow-lg shadow-gray-400 p-4 cursor-pointer hover:scale-110 ease-in duration-300">
-              <HiOutlineChevronDoubleUp className=" h-5 w-5 text-[#5651e1]" scale={30} />
+              <HiOutlineChevronDoubleUp
+                className=" h-5 w-5 text-[#5651e1]"
+                scale={30}
+              />
             </div>
           </Link>
         </div>
