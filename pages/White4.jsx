@@ -1,7 +1,7 @@
 import React from "react";
 import Link from "next/link";
 import Image from "next/image";
-import whiteImg4 from "../assets/white4.png";
+import whiteImg4 from "../public/assets/white4.png";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Navbar from "@/components/Navbar";
 
