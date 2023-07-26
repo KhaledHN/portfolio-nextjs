@@ -1,7 +1,6 @@
-import React from "react";
 import Image from "next/image";
 import { useRouter } from "next/router";
-import { useEffect, useState } from "react";
+import React, { useEffect, useState } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Navbar from "@/components/Navbar";
