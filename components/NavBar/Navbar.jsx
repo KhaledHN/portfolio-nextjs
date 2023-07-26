@@ -1,15 +1,15 @@
 import Image from "next/image";
 import Link from "next/link";
-import React, { useState, useEffect } from "react";
+import React, { useEffect, useState } from "react";
 import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 import DrawerNav from "./DrawerNav";
 
 const Navbar = ({ isDark }) => {
-  const [nav, setNav] = (useState = false);
-  const [shadow, setShadow] = (useState = false);
-  const [navBg, setNavBg] = (useState = "#ecf0f3");
-  const [linkColor, setLinkColor] = (useState = "#1f2937");
+  const [nav, setNav] = useState(false);
+  const [shadow, setShadow] = useState(false);
+  const [navBg, setNavBg] = useState("#ecf0f3");
+  const [linkColor, setLinkColor] = useState("#1f2937");
   const router = useRouter();
 
   useEffect(() => {
