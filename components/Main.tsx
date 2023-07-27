@@ -6,10 +6,9 @@ import Link from "next/link";
 import Navbar from "./NavBar/Navbar";
 
 const Main = () => {
-  const isDark = false; 
   return (
     <div id="home" className="w-full lg:h-screen text-center  ">
-      <Navbar isDark={isDark} />
+      <Navbar isDark={true}/>
       <div className="max-w-[1240px] w-full h-full mx-auto py-10 flex justify-center items-center ">
         <div>
           <h1 className="pt-20 pb-4 text-gray-700">
