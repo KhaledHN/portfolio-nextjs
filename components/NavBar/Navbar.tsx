@@ -5,7 +5,7 @@ import { AiOutlineMenu } from "react-icons/ai";
 import { useRouter } from "next/router";
 import DrawerNav from "./DrawerNav";
 
-const Navbar = ({ isDark }) => {
+const Navbar = ({ isLight }) => {
   const [nav, setNav] = useState(false);
   const [shadow, setShadow] = useState(false);
   const [navBg, setNavBg] = useState("#ecf0f3");
@@ -13,14 +13,14 @@ const Navbar = ({ isDark }) => {
   const router = useRouter();
 
   useEffect(() => {
-    if (isDark) {
+    if (isLight) {
       setNavBg("transparent");
       setLinkColor("#ecf0f3");
     } else {
       setNavBg("#ecf0f3");
       setLinkColor("#1f2937");
     }
-  }, [isDark]);
+  }, [isLight]);
 
   const handleNav = () => {
     setNav(!nav);
