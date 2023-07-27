@@ -22,7 +22,7 @@ const ProjectPage = () => {
   const [error, setError] = useState(null);
 
   useEffect(() => {
-    fetch("/api/Projects.json")
+    fetch("/api/projects")
       .then((res) => {
         if (!res.ok) {
           throw new Error("Failed to fetch project data");
