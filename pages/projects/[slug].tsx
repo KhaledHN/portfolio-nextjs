@@ -4,24 +4,48 @@ import React, { useEffect, useState } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
 import Navbar from "../../components/NavBar/Navbar";
-import projectsData from "../api/Projects.json"
+interface myProject {
+  title: string;
+  image: string;
+  body: string;
+  demo_url: string;
+  code_url: string;
+  technologies: string[];
+}
 
 const ProjectPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  const myProject = projectsData.projects.find((project) => project.slug === slug);
+  const [myProject, setMyProject] = useState<myProject>();
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
 
-  if (!myProject) {
-    <div className="content-center bg-red-600 pading-[150px] ">
-      <h1 className="font-bold text-white tex ">404</h1>
-      <h2 className="font-serif"></h2>
-    </div>
+  useEffect(() => {
+    fetch("/api/Projects.json")
+      .then((res) => {
+        if (!res.ok) {
+          throw new Error("Failed to fetch project data");
+        }
+        return res.json();
+      })
+      .then((data) => {
+        setMyProject(data.projects.find((project) => project.slug === slug));
+        setLoading(false);
+      })
+      .catch((error) => {
+        setError(error.message);
+        setLoading(false);
+      });
+  }, [slug]);
+
+  if (loading || !myProject) {
+    return <div>Loading...</div>; // Show a loading state while fetching data
   }
 
-  // Conditionally set the isDark prop for the Navbar
-  const isDarkNavbar = true;
-
+  if (error) {
+    return <div>Error: {error}</div>; // Display an error message if fetch fails
+  }
 
   return (
     <div className="w-full ">
