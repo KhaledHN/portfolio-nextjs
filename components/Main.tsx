@@ -8,7 +8,7 @@ import Navbar from "./NavBar/Navbar";
 const Main = () => {
   return (
     <div id="home" className="w-full lg:h-screen text-center  ">
-      <Navbar isDark={true}/>
+      <Navbar isLight={false}/>
       <div className="max-w-[1240px] w-full h-full mx-auto py-10 flex justify-center items-center ">
         <div>
           <h1 className="pt-20 pb-4 text-gray-700">
