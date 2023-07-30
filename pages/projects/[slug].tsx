@@ -3,13 +3,21 @@ import { useRouter } from "next/router";
 import React, { useEffect, useState } from "react";
 import { RiRadioButtonFill } from "react-icons/ri";
 import Link from "next/link";
-import Navbar from "@/components/NavBar/Navbar";
+import Navbar from "components/NavBar";
+interface myProject {
+  title: string;
+  image: string;
+  body: string;
+  demo_url: string;
+  code_url: string;
+  technologies: string[];
+}
 
 const ProjectPage = () => {
   const router = useRouter();
   const { slug } = router.query;
 
-  const [myProject, setMyProject] = useState();
+  const [myProject, setMyProject] = useState<myProject>();
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
 
@@ -41,7 +49,7 @@ const ProjectPage = () => {
 
   return (
     <div className="w-full ">
-      <Navbar isDark={true} />
+      <Navbar isLight={true} />
       <div className="w-screen h-[30vh] lg:h-[40vh] relative ">
         <div className="absolute top-0 left-0 w-full h-[30vh] lg:h-[40vh] bg-black/80 z-10 " />
         <Image
