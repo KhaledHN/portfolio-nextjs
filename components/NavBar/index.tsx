@@ -44,13 +44,15 @@ const Navbar = ({ isLight }) => {
       } fixed w-full h-20 z-[100] duration-200`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
+        <div className="pl-2">
         <Link href="/">
           <Image src="/assets/navLgo.png" alt="" width={100} height={50} />
         </Link>
+        </div>
 
         {/* desktop menu */}
         <div>
-          <ul style={{ color: `${linkColor}` }} className="hidden md:flex">
+          <ul style={{ color: `${linkColor}` }} className=" pr-5 hidden md:flex">
             <Link href="/">
               <li className="ml-10 text-sm uppercase hover:border-b">Home</li>
             </Link>
