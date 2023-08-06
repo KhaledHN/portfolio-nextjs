@@ -13,7 +13,7 @@ export default function Home() {
     <div>
       <Head>
         <title>Khaled Hazem | Front-End Developer</title>
-        <link rel="icon" href="/assets/navLogo.png" />
+        <link rel="icon" href="/assets/navLgo.png" />
       </Head>
       <Main />
       <About />
