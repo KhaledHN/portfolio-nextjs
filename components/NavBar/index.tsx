@@ -45,7 +45,7 @@ const Navbar = ({ isLight }) => {
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
         <Link href="/">
-          <Image src="/assets/navLogo.png" alt="" width={100} height={50} />
+          <Image src="/assets/navLgo.png" alt="" width={100} height={50} />
         </Link>
 
         {/* desktop menu */}
