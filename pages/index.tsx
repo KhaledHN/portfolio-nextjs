@@ -5,6 +5,8 @@ import Main from "components/Main";
 import Skills from "components/Skills";
 import Projects from "components/Projects";
 import Contact from "components/Contact";
+import { Analytics } from '@vercel/analytics/react';
+
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -20,6 +22,7 @@ export default function Home() {
       <Skills />
       <Projects />
       <Contact />
+      <Analytics />
     </div>
   );
 }
