@@ -44,7 +44,7 @@ const Navbar = ({ isLight }) => {
       } fixed w-full h-20 z-[100] duration-200`}
     >
       <div className="flex justify-between items-center w-full h-full px-2 2xl:px-16">
-        <div className="pl-2">
+        <div className="">
         <Link href="/">
           <Image src="/assets/navLgo.png" alt="" width={100} height={50} />
         </Link>
@@ -73,7 +73,7 @@ const Navbar = ({ isLight }) => {
               </li>
             </Link>
           </ul>
-          <div onClick={handleNav} className="md:hidden">
+          <div onClick={handleNav} className=" pr-5 md:hidden">
             <AiOutlineMenu size={25} />
           </div>
         </div>
