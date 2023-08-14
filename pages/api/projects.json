@@ -2,7 +2,7 @@
     "projects": [
         {
             "slug": "Trav",
-            "title": "Travelious",
+            "title": "Travelious (Not my project) ",
             "technologies": [
                 "React",
                 "Tailwind",
@@ -15,7 +15,7 @@
         },
         {
             "slug": "Colib",
-            "title": "ColorLib",
+            "title": "ColorLib (Not my project) ",
             "technologies": [
                 "jQuery",
                 "PHP",
@@ -28,7 +28,7 @@
         },
         {
             "slug": "hubspot",
-            "title": "HubSpot",
+            "title": "HubSpot (Not my project) ",
             "technologies": [
                 "React",
                 "Core-js",
@@ -41,7 +41,7 @@
         },
         {
             "slug": "knapsack",
-            "title": "Knapsack",
+            "title": "Knapsack (Not my project) ",
             "technologies": [
                 "jQuery",
                 "JavaScript",
