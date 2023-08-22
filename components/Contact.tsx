@@ -2,8 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm, ValidationError } from "@formspree/react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaGithub, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { BsFillPersonLinesFill } from "react-icons/bs";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 const Contact = () => {
@@ -41,7 +41,7 @@ const Contact = () => {
               </div>
               <div>
                 <h2 className="py-2">Khaled Hazem</h2>
-                <p>Front-End Developer</p>
+                <p className="font-bold">Front-End Developer</p>
                 <p>
                   I am available for freelance or part-time positions. Contact
                   me and let`s talk.
@@ -61,13 +61,13 @@ const Contact = () => {
                     </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <Link href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJqXxhFbpRhxNlVPhLsSwWrlkqhLtXRKFkCtRfxVBnfFHZrnmZNmzdTStkWKskMNjXHPRhg">
-                      <AiOutlineMail />
+                    <Link href="https://www.instagram.com/halittenbisigitti/">
+                      <AiOutlineInstagram />
                     </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <Link href="https://about.me/khaledhazem">
-                      <BsFillPersonLinesFill />
+                    <Link href="https://www.facebook.com/khaled.hazem.988926/">
+                      <FaFacebook />
                     </Link>
                   </div>
                 </div>
