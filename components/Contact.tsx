@@ -2,9 +2,8 @@ import React from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { useForm, ValidationError } from "@formspree/react";
-import { AiOutlineMail } from "react-icons/ai";
-import { FaGithub, FaLinkedinIn } from "react-icons/fa";
-import { BsFillPersonLinesFill } from "react-icons/bs";
+import { AiOutlineInstagram } from "react-icons/ai";
+import { FaGithub, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import { HiOutlineChevronDoubleUp } from "react-icons/hi";
 const Contact = () => {
   const [state, handleSubmit] = useForm("xeqbogvy");
@@ -61,13 +60,13 @@ const Contact = () => {
                     </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <Link href="https://mail.google.com/mail/u/0/#sent?compose=CllgCJqXxhFbpRhxNlVPhLsSwWrlkqhLtXRKFkCtRfxVBnfFHZrnmZNmzdTStkWKskMNjXHPRhg">
-                      <AiOutlineMail />
+                    <Link href="https://www.instagram.com/halittenbisigitti/">
+                      <AiOutlineInstagram />
                     </Link>
                   </div>
                   <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-                    <Link href="https://about.me/khaledhazem">
-                      <BsFillPersonLinesFill />
+                    <Link href="https://www.facebook.com/khaled.hazem.988926/">
+                      <FaFacebook />
                     </Link>
                   </div>
                 </div>

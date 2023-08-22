@@ -1,17 +1,18 @@
 {
     "projects": [
         {
-            "slug": "Trav",
-            "title": "Travelious (Not my project) ",
+            "slug": "Hazem-Portfolio",
+            "title": "Hazem Khaled's Portfolio ",
             "technologies": [
-                "React",
+                "Next JS",
                 "Tailwind",
-                "Typescript"
+                "Typescript",
+                "Formspree"
             ],
-            "body": "Travelious is a comprehensive travel platform that uses advanced technology and personalized recommendations to simplify travel planning, offering a seamless booking experience and extensive destination information. It provides tailored suggestions based on user preferences, offers a wide range of travel resources, and fosters a community of travelers. Overall, Travelious aims to enhance the travel experience and empower individuals to embark on memorable journeys.",
-            "demo_url": "https://example.com/",
-            "code_url": "https://github.com/khaledhn",
-            "image": "/assets/Travelious.jpeg"
+            "body": "The portfolio website I crafted elegantly balances simplicity and style, alternating between black and white sections. Its user experience is optimized with a sleek top navigation bar that converts to a drawer-style menu on smaller screens, while the website's performance is enhanced through background loading of the drawer navigation for responsiveness. Three distinct sections present the individual's services, background, and contact information. Leveraging Next.js, TypeScript, Tailwind CSS, and Formspree, the site seamlessly combines modern technologies for a polished result. Its adaptable structure sets the stage for potential future enhancements. In summary, the website embodies minimalistic sophistication, offering a captivating experience that harmonizes design and functionality.",
+            "demo_url": "https://hazemkhaled.com",
+            "code_url": "https://github.com/HazemKhaled/hazemkhaled.com",
+            "image": "/assets/hazemkhaled.com-img.png"
         },
         {
             "slug": "Colib",
