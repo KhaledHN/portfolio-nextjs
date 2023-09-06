@@ -25,7 +25,7 @@ function DrawerNav(props) {
           <div className="flex w-full items-center justify-between">
             <Link onClick={handleNav} href="">
               <Image
-                src="/navbar assets/navLogo.png"
+                src="/assets/navLgo.png"
                 alt=""
                 width="100"
                 height="50"
