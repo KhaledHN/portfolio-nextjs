@@ -1,6 +1,5 @@
 import React from "react";
-import { AiOutlineInstagram } from "react-icons/ai";
-import { FaGithub, FaFacebook, FaLinkedinIn } from "react-icons/fa";
+import { FaGithub, FaInstagram, FaFacebook, FaLinkedinIn } from "react-icons/fa";
 import Link from "next/link";
 import Navbar from "components/NavBar";
 
@@ -22,29 +21,29 @@ const Main = () => {
             in utilizing Tailwind CSS for streamlined styling. Actively
             contributing on GitHub and deploying applications with Vercel.
             Seeking new opportunities and collaborations in web development.
-            <span className="text-[#5651e1]">
-              <Link href="/#contact">Lets connect!</Link>
+            <span className="text-[#5651e1] underline ">
+              <Link href="/#contact" className=" " >Lets connect!</Link>
             </span>
           </p>
           <div className="flex items-center justify-between max-w-[330px] m-auto py-4">
-          <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+          <div className="rounded-3xl shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://www.linkedin.com/in/khaledHN/">
                 <FaLinkedinIn />
               </Link>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-3xl shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://github.com/KhaledHN">
-                <FaGithub />
+                <FaGithub className=" scale-110 " />
               </Link>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
-              <Link href="https://www.instagram.com/halittenbisigitti/">
-                <AiOutlineInstagram />
+            <div className="rounded-3xl shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+              <Link href="https://www.instagram.com/halittenbisigitti/"  >
+                <FaInstagram className=" scale-125 " />
               </Link>
             </div>
-            <div className="rounded-full shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
+            <div className="rounded-3xl shadow-lg shadow-gray-400 p-5 cursor-pointer hover:scale-110 ease-in duration-300">
               <Link href="https://www.facebook.com/khaled.hazem.988926/">
-                <FaFacebook />
+                <FaFacebook className=" scale-110 " />
               </Link>
             </div>
           </div>
